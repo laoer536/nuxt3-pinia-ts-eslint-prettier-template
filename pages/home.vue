@@ -1,7 +1,4 @@
 <script setup lang="ts">
-definePageMeta({
-    title: 'My home page'
-})
 import {useRouter} from "vue-router";
 const router = useRouter();
 function goAbout(){
@@ -10,7 +7,11 @@ function goAbout(){
 </script>
 <template>
   <div>
-      <!--<NuxtWelcome />-->
+      <Head>
+          <Title>home</Title>
+          <Meta name="description" :content="'home'" />
+          <Style type="text/css" children="body { background-color: green; }" />
+      </Head>
       <button @click="goAbout">点击跳转到about</button>
   </div>
 </template>

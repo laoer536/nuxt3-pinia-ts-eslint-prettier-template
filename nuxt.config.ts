@@ -11,7 +11,7 @@ export default defineNuxtConfig({
       types: ["@pinia/nuxt"],
     },
   },
-  buildModules: ["@pinia/nuxt"],
+  modules: ["@pinia/nuxt"],
   vite: {
     server: {
       proxy: {

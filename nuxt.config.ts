@@ -12,9 +12,6 @@ export default defineNuxtConfig({
     },
   },
   buildModules: ["@pinia/nuxt"],
-  router: {
-    middleware: ["dynamic-head"],
-  },
   vite: {
     server: {
       proxy: {

@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     },
   },
   modules: ["@pinia/nuxt"],
+  css: ["~/assets/styles/normalize.css", "~/assets/styles/app.less"],
   vite: {
     server: {
       proxy: {

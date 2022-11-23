@@ -16,8 +16,4 @@ function goAbout() {
   </div>
 </template>
 
-<style lang="scss" scoped>
-body {
-  background-color: mediumslateblue;
-}
-</style>
+<style lang="scss" scoped></style>

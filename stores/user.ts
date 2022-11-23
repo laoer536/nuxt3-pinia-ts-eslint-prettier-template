@@ -6,7 +6,7 @@ interface UserInfo {
 }
 export const useUserStore = defineStore('user', {
   state: (): UserInfo => ({
-    userName: 'LiuJie',
+    userName: 'laoer536',
     age: 23,
   }),
   getters: {

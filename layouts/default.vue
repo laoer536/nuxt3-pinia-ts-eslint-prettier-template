@@ -11,4 +11,4 @@ const userStore = useUserStore()
   </div>
 </template>
 
-<style scoped></style>
+<style lang="scss"></style>

@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     },
   },
   modules: [['@pinia/nuxt']],
-  css: ['~/assets/styles/normalize.css', '~/assets/styles/app.scss'],
+  css: ['~/assets/styles/normalize.css'],
   vite: {
     server: {
       proxy: {

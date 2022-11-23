@@ -5,8 +5,16 @@ export default defineNuxtConfig({
       link: [{ rel: 'icon', href: '/favicon.ico' }],
     },
   },
-  modules: [['@pinia/nuxt']],
-  css: ['~/assets/styles/normalize.css'],
+  modules: [
+    ['@pinia/nuxt'],
+    [
+      '@nuxtjs/color-mode',
+      {
+        classSuffix: '', //适应unocss tailwindcss 模式
+      },
+    ],
+  ],
+  css: ['~/assets/styles/normalize.css', '~/assets/styles/app.scss'],
   vite: {
     server: {
       proxy: {

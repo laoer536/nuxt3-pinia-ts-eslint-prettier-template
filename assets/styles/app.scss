@@ -1,0 +1,81 @@
+:root {
+  --c-primary: #5fc178;
+  --c-text: #333;
+  --c-bg: #fff;
+}
+
+.dark {
+  --c-text: #fafafa;
+  --c-bg: #121212;
+}
+
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+
+html,
+body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#__nuxt{
+  min-height: 100%;
+}
+#app{
+  padding:1rem 1rem 1rem;
+  min-height: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+html.dark {
+  background: #121212;
+}
+
+input:focus {
+  outline: none;
+}
+
+//#nprogress {
+//  pointer-events: none;
+//}
+//
+//#nprogress .bar {
+//  background: rgb(13,148,136);
+//  opacity: 0.75;
+//  position: fixed;
+//  z-index: 1031;
+//  top: 0;
+//  left: 0;
+//  width: 100%;
+//  height: 2px;
+//}
+
+html {
+  color: var(--c-text);
+  background-color: var(--c-bg);
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: var(--c-text);
+}
+
+button {
+  outline: none;
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+hr {opacity: 0.1;}
+
+.tag {
+  margin: 4px;
+  padding: 2px 4px;
+  // border: 1px solid var(--c-text);
+}

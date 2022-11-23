@@ -14,8 +14,10 @@ function goAbout() {
       <!--<Style type="text/css" children="body { background-color: green; }" />-->
     </Head>
     <button @click="goAbout">点击跳转到about</button>
-    <button @click="userStore.changeAge">点击age会加1：{{ userStore.age }}</button>
-    <div>doubleAge：{{ userStore.doubleAge }}</div>
+    <button @click="userStore.changeAge">点击会加1：{{ userStore.age }}</button>
+    <div>doubleNum：{{ userStore.doubleAge }}</div>
+    <button @click="$colorMode.preference = 'light'">light模式</button>
+    <button @click="$colorMode.preference = 'dark'">dark模式</button>
   </div>
 </template>
 

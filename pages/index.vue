@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NuxtWelcome />
+    <button @click="router.push('/home')">点击跳转到about</button>
   </div>
 </template>
 
@@ -8,4 +8,5 @@
 definePageMeta({
   layout: false, //禁用layout
 })
+const router = useRouter()
 </script>

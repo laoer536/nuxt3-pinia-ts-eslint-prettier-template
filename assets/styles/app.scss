@@ -13,22 +13,31 @@
   box-sizing: border-box;
 }
 
-html,
-body{
-  height: 100%;
-  margin: 0;
-  padding: 0;
+html{
+  @extend body;
   transition-property: background-color;
   transition-duration: 0.5s;
 }
+
+body,
 #__nuxt{
-  min-height: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
-#app{
-  padding:1rem 1rem 1rem;
-  min-height: 100%;
+
+#app {
+  width: 100vw;
   max-width: 900px;
   margin: 0 auto;
+  position: relative;
+  min-height: 100%;
+  height: max-content;
+  > div:first-child {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+  }
 }
 
 html.dark {

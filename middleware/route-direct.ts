@@ -3,8 +3,8 @@
 
 export default defineNuxtRouteMiddleware(({ path }) => {
   // console.log(to, from);
-  if (path === "/") {
-    console.log("执行了");
-    return navigateTo("/home");
+  if (path === '/') {
+    console.log('执行了')
+    return navigateTo('/home')
   }
-});
+})

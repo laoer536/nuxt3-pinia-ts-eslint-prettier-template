@@ -5,17 +5,16 @@
     "build-test": "nuxt build --mode test",
     "dev": "nuxt dev --mode development",
     "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxt/types": "^2.15.8",
-    "less": "^4.1.2",
-    "less-loader": "^11.0.0",
-    "nuxt": "3.0.0-rc.3",
-    "prettier": "^2.6.2"
+    "nuxt": "3.0.0",
+    "prettier": "^2.6.2",
+    "sass": "^1.56.1"
   },
   "dependencies": {
-    "@pinia/nuxt": "^0.1.9",
+    "@pinia/nuxt": "^0.4.5",
     "pinia": "^2.0.14"
   }
 }

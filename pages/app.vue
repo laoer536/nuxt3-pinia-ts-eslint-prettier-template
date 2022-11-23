@@ -1,10 +1,9 @@
-<script setup lang='ts'></script>
+<script setup lang="ts"></script>
 
 <template>
-<div>
-    <NuxtPage/>
-</div>
+  <div>
+    <NuxtPage />
+  </div>
 </template>
 
-<style lang="less" >
-</style>
+<style lang="scss"></style>

@@ -5,7 +5,7 @@ export default defineNuxtConfig({
       link: [{ rel: 'icon', href: '/favicon.ico' }],
     },
   },
-  modules: ['@pinia/nuxt'],
+  modules: [['@pinia/nuxt']],
   css: ['~/assets/styles/normalize.css', '~/assets/styles/app.scss'],
   vite: {
     server: {

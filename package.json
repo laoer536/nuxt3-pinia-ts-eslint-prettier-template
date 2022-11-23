@@ -14,7 +14,6 @@
     "sass": "^1.56.1"
   },
   "dependencies": {
-    "@pinia/nuxt": "^0.4.5",
-    "pinia": "^2.0.14"
+    "@pinia/nuxt": "^0.4.5"
   }
 }

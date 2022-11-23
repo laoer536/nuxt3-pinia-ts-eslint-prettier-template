@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { useRouter } from 'vue-router'
+import { useUserStore } from '~/stores/user'
 const router = useRouter()
+const userStore = useUserStore()
 function goAbout() {
   router.push('/about')
 }
@@ -13,6 +14,8 @@ function goAbout() {
       <!--<Style type="text/css" children="body { background-color: green; }" />-->
     </Head>
     <button @click="goAbout">点击跳转到about</button>
+    <button @click="userStore.changeAge">点击age会加1：{{ userStore.age }}</button>
+    <div>doubleAge：{{ userStore.doubleAge }}</div>
   </div>
 </template>
 

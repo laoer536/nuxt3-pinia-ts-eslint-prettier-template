@@ -15,9 +15,8 @@ export const useUserStore = defineStore('user', {
     },
   },
   actions: {
-    changeAge(age: number) {
-      console.log(age, this.age)
-      this.age = age
+    changeAge() {
+      this.age += 1
     },
 
     //可以直接使用异步操作

@@ -19,8 +19,8 @@ export const useUserStore = defineStore('user', {
       this.age += 1
     },
 
-    //可以直接使用异步操作
-    /*async registerUser(login, password) {
+    // 可以直接使用异步操作
+    /* async registerUser(login, password) {
       try {
         this.userData = await api.post({ login, password })
         showTooltip(`Welcome back ${this.userData.name}!`)
@@ -30,6 +30,6 @@ export const useUserStore = defineStore('user', {
         return error
       }
     },
-  },*/
+  }, */
   },
 })

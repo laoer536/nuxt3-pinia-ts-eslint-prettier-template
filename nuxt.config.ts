@@ -5,6 +5,9 @@ export default defineNuxtConfig({
       link: [{ rel: 'icon', href: '/favicon.ico' }],
     },
   },
+  typescript: {
+    strict: true,
+  },
   modules: [
     ['@pinia/nuxt'],
     [

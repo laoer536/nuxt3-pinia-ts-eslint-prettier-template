@@ -6,7 +6,7 @@ export default () => {
   return defineNuxtConfig({
     app: {
       head: {
-        link: [{ rel: 'icon', href: '/favicon.ico' }],
+        link: [{ rel: 'icon', href: 'https://nuxt.com/icon.png' }],
       },
       baseURL: '/nuxt3-pinia-ts-eslint-prettier-template/',
     },

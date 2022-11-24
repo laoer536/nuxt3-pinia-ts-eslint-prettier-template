@@ -46,5 +46,6 @@ export default () => {
         },
       },
     },
+    sourcemap: process.env.NODE_ENV !== 'production',
   })
 }

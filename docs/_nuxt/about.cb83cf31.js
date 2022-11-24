@@ -1,1 +1,0 @@
-import{a as t,b as o,t as a,u as n,o as r}from"./entry.7c9aa36d.js";const l=t({__name:"about",setup(s){const e={VITE_USER_NODE_ENV:"production",BASE_URL:"./",MODE:"production",DEV:!1,PROD:!0}.VITE_API_BASE_URL;return(_,u)=>(r(),o("div",null,"about\u9875\u9762 baseUrl:"+a(n(e)),1))}});export{l as default};

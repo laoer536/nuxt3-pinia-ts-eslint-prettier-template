@@ -1,1 +1,0 @@
-import{a as t,f as n,b as u,i as s,u as r,o as a}from"./entry.7c9aa36d.js";const l=t({__name:"index",setup(m){const o=n();return(p,e)=>(a(),u("div",null,[s("button",{onClick:e[0]||(e[0]=c=>r(o).push("/home"))},"\u70B9\u51FB\u8DF3\u8F6C\u5230home")]))}});export{l as default};

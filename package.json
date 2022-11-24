@@ -1,10 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "build": "nuxt build --mode production",
-    "build-test": "nuxt build --mode test",
-    "dev": "nuxt dev --mode development",
-    "generate": "nuxt generate --mode production",
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint . --ext .vue,.js,.ts --fix",

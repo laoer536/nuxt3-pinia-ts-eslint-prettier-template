@@ -1,17 +1,9 @@
-<script setup lang="ts">
-let mode = useColorMode()
-function changeMode() {
-  if (mode.value === 'dark') {
-    mode.preference = 'light'
-  } else {
-    mode.preference = 'dark'
-  }
-}
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div>
-    <button class="cursor-pointer" @click="changeMode">
+    <button class="cursor-pointer" @click="toggleDark()">
+      <!--toggleDark已经自动导入 在/composables中-->
       <div i="ri-sun-line dark:ri-moon-line" />
     </button>
   </div>

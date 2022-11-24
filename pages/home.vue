@@ -16,8 +16,6 @@ function goAbout() {
     <button @click="goAbout">点击跳转到about</button>
     <button @click="userStore.changeAge">点击会加1：{{ userStore.age }}</button>
     <div>doubleNum：{{ userStore.doubleAge }}</div>
-    <button @click="$colorMode.preference = 'light'">light模式</button>
-    <button @click="$colorMode.preference = 'dark'">dark模式</button>
   </div>
 </template>
 

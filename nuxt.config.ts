@@ -8,12 +8,6 @@ export default defineNuxtConfig({
   modules: [
     ['@pinia/nuxt'],
     [
-      '@nuxtjs/color-mode',
-      {
-        classSuffix: '', //适应unocss tailwindcss 模式
-      },
-    ],
-    [
       '@unocss/nuxt',
       {
         uno: true, // enabled `@unocss/preset-uno`
@@ -29,6 +23,7 @@ export default defineNuxtConfig({
         rules: [],
       },
     ],
+    ['@vueuse/nuxt'],
   ],
   css: ['~/assets/styles/app.scss'],
   vite: {

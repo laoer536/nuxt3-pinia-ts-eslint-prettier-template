@@ -10,6 +10,7 @@ export default () => {
       },
       baseURL: curEnv.VITE_PUBLIC_PATH,
     },
+    // ssr:false, //构建静态
     typescript: {
       strict: true,
       // typeCheck: 'build',

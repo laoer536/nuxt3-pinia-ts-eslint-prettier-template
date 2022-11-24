@@ -4,9 +4,11 @@ export default defineNuxtConfig({
     head: {
       link: [{ rel: 'icon', href: '/favicon.ico' }],
     },
+    baseURL: process.env.NUXT_PUBLIC_PATH as string,
   },
   typescript: {
     strict: true,
+    // typeCheck: 'build',
   },
   modules: [
     ['@pinia/nuxt'],

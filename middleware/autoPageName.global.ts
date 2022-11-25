@@ -2,7 +2,9 @@
 // import {navigateTo} from "#app";
 // import { useHead } from '#head'
 export default defineNuxtRouteMiddleware((to, from) => {
+  const title = to.name === 'index' ? 'nuxt3-pinia-ts-eslint-prettier-template' : (to.name as string)
   useHead({
-    title: to.name === 'index' ? 'nuxt3-pinia-ts-eslint-prettier-template' : (to.name as string),
+    title,
+    meta: [{ property: 'og:title', content: title }],
   })
 })

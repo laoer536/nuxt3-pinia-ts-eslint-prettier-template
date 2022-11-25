@@ -6146,6 +6146,11 @@ standard-as-callback@^2.1.0:
   resolved "https://registry.npmmirror.com/standard-as-callback/-/standard-as-callback-2.1.0.tgz#8953fc05359868a77b5b9739a665c5977bb7df45"
   integrity sha512-qoRRSyROncaz1z0mvYqIE4lCd9p2R90i6GxW3uZv5ucSu8tU7B5HXUP1gG8pVZsYNVaXjk8ClXHPttLyxAL48A==
 
+star-markdown-css@^0.4.1:
+  version "0.4.1"
+  resolved "https://registry.npmmirror.com/star-markdown-css/-/star-markdown-css-0.4.1.tgz#a95da5ff852a25d73cd57bc6b8542ced1b7c386d"
+  integrity sha512-N1PWmbplX4vyEndNH8iKzZI8KLK7rsxoeGYnRJZLwtTcaY+ENThQ7DBuWtjuCY04QbN8CWOBV62AckxGMRY9ZA==
+
 statuses@2.0.1:
   version "2.0.1"
   resolved "https://registry.npmmirror.com/statuses/-/statuses-2.0.1.tgz#55cb000ccf1d48728bd23c685a063998cf1a1b63"

@@ -1,5 +1,5 @@
 <template>
-  <div class="promise">
+  <div class="markdown-body">
     <ContentDoc path="/promise" />
   </div>
 </template>

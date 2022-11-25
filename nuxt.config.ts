@@ -66,7 +66,7 @@ export default () => {
       ],
       ['@vueuse/nuxt'],
     ],
-    css: ['~/assets/styles/app.scss'],
+    css: ['~/assets/styles/app.scss', '~/assets/styles/markdown.scss'],
     vite: {
       server: {
         proxy: {

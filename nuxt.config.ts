@@ -23,6 +23,8 @@ export default () => {
         ],
       },
       baseURL: curEnv.VITE_PUBLIC_PATH,
+      layoutTransition: { name: 'layout', mode: 'out-in' },
+      pageTransition: { name: 'page', mode: 'out-in' },
     },
     // ssr:false, //构建静态
     typescript: {

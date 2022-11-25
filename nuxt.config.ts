@@ -14,7 +14,7 @@ export default () => {
           {
             property: 'og:description',
 
-            content: 'nuxt3-pinia-ts-eslint-prettier-template  nuxt3&YYDS🫡',
+            content: '哈哈哈哈 点击浏览 nuxt3-pinia-ts-eslint-prettier-template项目online',
           },
           {
             property: 'og:image',

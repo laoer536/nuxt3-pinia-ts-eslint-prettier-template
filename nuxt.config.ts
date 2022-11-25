@@ -6,7 +6,21 @@ export default () => {
   return defineNuxtConfig({
     app: {
       head: {
+        title: 'nuxt3-pinia-ts-eslint-prettier-template',
         link: [{ rel: 'icon', href: 'https://nuxt.com/icon.png' }],
+        meta: [
+          { property: 'og:title', content: 'nuxt3-pinia-ts-eslint-prettier-template' },
+          { property: 'og:url', content: 'https://laoer536.github.io/nuxt3-pinia-ts-eslint-prettier-template/' },
+          {
+            property: 'og:description',
+
+            content: 'nuxt3-pinia-ts-eslint-prettier-template  nuxt3&YYDS🫡',
+          },
+          {
+            property: 'og:image',
+            content: 'https://nuxt.com/icon.png',
+          },
+        ],
       },
       baseURL: curEnv.VITE_PUBLIC_PATH,
     },

@@ -5,9 +5,6 @@ definePageMeta({
 import { useUserStore } from '~/stores/user'
 const router = useRouter()
 const userStore = useUserStore()
-function goAbout() {
-  router.push('/about')
-}
 </script>
 <template>
   <div>
@@ -15,9 +12,15 @@ function goAbout() {
     <!--      <Title>哈哈哈哈</Title>-->
     <!--      <Style type="text/css" children="body { background-color: green; }" />-->
     <!--    </Head>-->
-    <button @click="goAbout">点击跳转到about</button>
-    <button @click="userStore.changeAge">点击会加1：{{ userStore.age }}</button>
-    <div>doubleNum：{{ userStore.doubleAge }}</div>
+    <div class="mt-4">
+      <button @click="router.push('/about')">➡️about</button>
+      <button @click="router.push('/promise')">➡️promise(md-解析)</button>
+    </div>
+    <br />
+    <div class="flex gap-6 items-center mt-4">
+      <button @click="userStore.changeAge">点击会加1：{{ userStore.age }}</button>
+      <div>doubleNum：{{ userStore.doubleAge }}</div>
+    </div>
   </div>
 </template>
 

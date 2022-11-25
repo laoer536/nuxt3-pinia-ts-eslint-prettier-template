@@ -32,6 +32,7 @@ export default () => {
       // typeCheck: 'build',
     },
     modules: [
+      ['@nuxt/content'],
       ['@pinia/nuxt'],
       [
         '@unocss/nuxt',

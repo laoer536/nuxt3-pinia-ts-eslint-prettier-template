@@ -17,7 +17,7 @@ const userStore = useUserStore()
       <button @click="router.push('/promise')">➡️promise(md-解析)</button>
     </div>
     <br />
-    <div class="flex gap-6 items-center mt-4">
+    <div class="mt-4 flex items-center gap-6">
       <button @click="userStore.changeAge">点击会加1：{{ userStore.age }}</button>
       <div>doubleNum：{{ userStore.doubleAge }}</div>
     </div>

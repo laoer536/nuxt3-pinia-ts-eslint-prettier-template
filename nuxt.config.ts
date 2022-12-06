@@ -1,7 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import { loadEnv } from 'vite'
+const curNpmScript = process.env.npm_lifecycle_script as string
+const envName = curNpmScript.includes('--mode') ? curNpmScript.split(' ').splice(-1)[0] : process.env.NODE_ENV
 export default () => {
-  const curEnv = loadEnv(process.env.NODE_ENV as string, process.cwd())
+  const curEnv = loadEnv(envName as string, process.cwd())
   console.log(curEnv)
   return defineNuxtConfig({
     app: {

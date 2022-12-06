@@ -7,7 +7,7 @@ export default () => {
     app: {
       head: {
         title: 'nuxt3-pinia-ts-eslint-prettier-template',
-        link: [{ rel: 'icon', href: 'https://nuxt.com/icon.png' }],
+        link: [{ rel: 'icon', href: curEnv.VITE_PUBLIC_PATH + 'favicon.ico' }],
         meta: [
           { property: 'og:title', content: 'nuxt3-pinia-ts-eslint-prettier-template' },
           { property: 'og:url', content: 'https://laoer536.github.io/nuxt3-pinia-ts-eslint-prettier-template/' },
@@ -18,7 +18,7 @@ export default () => {
           },
           {
             property: 'og:image',
-            content: 'https://nuxt.com/icon.png',
+            content: curEnv.VITE_PUBLIC_PATH + 'favicon.ico',
           },
         ],
       },

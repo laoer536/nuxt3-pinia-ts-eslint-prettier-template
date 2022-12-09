@@ -34,6 +34,7 @@ export default () => {
       // typeCheck: 'build',
     },
     modules: [
+      ['nuxt-security'],
       [
         '@nuxt/content',
         {

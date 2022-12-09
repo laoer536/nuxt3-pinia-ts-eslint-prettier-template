@@ -68,6 +68,12 @@ export default () => {
       ],
       ['@vueuse/nuxt'],
     ],
+    components: [
+      {
+        path: '~/components',
+        global: true,
+      },
+    ],
     css: ['~/assets/styles/app.scss', '~/assets/styles/markdown.scss'],
     vite: {
       server: {

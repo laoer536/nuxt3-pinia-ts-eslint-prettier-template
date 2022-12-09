@@ -2,7 +2,7 @@
 title: '异步promise'
 description: 'this page use for testing md format to HTML'
 ---
-
+::mark-down
 > 关于 Promise 的一些探索以及总结
 
 #### Promise 异步
@@ -122,3 +122,4 @@ order().catch((err) => {
   console.log('发生err，err信息', err)
 })
 ```
+::

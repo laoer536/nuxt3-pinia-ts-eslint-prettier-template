@@ -4,7 +4,7 @@ useDark()
 
 <template>
   <div id="app">
-    <div>
+    <div class="p-4">
       <base-header />
       <slot />
     </div>

@@ -1,5 +1,7 @@
 <template>
-  <ContentDoc path="/promise" />
+  <div>
+    <ContentDoc path="/promise" />
+  </div>
 </template>
 
 <style scoped></style>

@@ -34,7 +34,29 @@ export default () => {
       // typeCheck: 'build',
     },
     modules: [
-      ['nuxt-security'],
+      [
+        'nuxt-security',
+        {
+          allowedMethodsRestricter: {
+            value: ['GET', 'POST', 'PUT', 'DELETE'],
+          },
+          // rateLimiter
+          corsHandler: {
+            value: {
+              origin: curEnv.VITE_PUBLIC_ORIGIN,
+              methods: ['GET', 'POST', 'PUT', 'DELETE'], //  | "HEAD" | "PATCH" | "POST" | "PUT" | "DELETE" | "CONNECT" | "OPTIONS" | "TRACE"
+            },
+          },
+          // basicAuth: {
+          //   value: {
+          //     name: 'laoer536',
+          //     pass: '19980309',
+          //     enabled: true,
+          //     message: '需要登陆哦',
+          //   },
+          // },
+        },
+      ],
       [
         '@nuxt/content',
         {

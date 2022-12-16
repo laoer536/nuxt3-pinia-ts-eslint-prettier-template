@@ -98,13 +98,24 @@ export default () => {
       },
     ],
     css: ['~/assets/styles/app.scss', '~/assets/styles/markdown.scss'],
-    vite: {
-      server: {
-        proxy: {
-          '/api': {
-            target: 'http://xxxxxxxx',
-            rewrite: (path) => path.replace(/^\/api/, ''),
-          },
+    // postcss: {
+    //   config: false,
+    //   plugins: {
+    //     'postcss-pxtorem': {
+    //       rootValue: 100,
+    //       propList: ['*'],
+    //       exclude: /(node_module)/,
+    //       selectorBlackList: ['.van', 'html', '.rem-ignore', '#app'],
+    //     },
+    //   },
+    // },
+    nitro: {
+      devProxy: {
+        '/account': { target: curEnv.VITE_API_V2URL, changeOrigin: true },
+        '/api': {
+          target: curEnv.VITE_API_V3URL,
+          changeOrigin: true,
+          rewrite: (path: string) => path.replace(/^\/api/, ''),
         },
       },
     },

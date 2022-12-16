@@ -115,7 +115,9 @@ export default () => {
         '/api': {
           target: curEnv.VITE_API_V3URL,
           changeOrigin: true,
-          rewrite: (path: string) => path.replace(/^\/api/, ''),
+          //type NitroFetchRequest = Exclude<keyof InternalApi, `/_${string}` | `/api/_${string}`> | Exclude<FetchRequest, string> | string & {};
+          //初步判断 代理部分已经针对/和/api/开头的地址做了如下的替换处理
+          // rewrite: (path: string) => path.replace(/^\/api/, ''),  //没有这个配置
         },
       },
     },

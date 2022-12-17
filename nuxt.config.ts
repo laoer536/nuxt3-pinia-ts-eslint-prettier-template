@@ -102,7 +102,9 @@ export default () => {
     //   config: false,
     //   plugins: {
     //     'postcss-pxtorem': {
-    //       rootValue: 100,
+    //       rootValue({ file }: { file: string }) {
+    //         return file.includes('vant') ? 37.5 : 100
+    //       },
     //       propList: ['*'],
     //       exclude: /(node_module)/,
     //       selectorBlackList: ['.van', 'html', '.rem-ignore', '#app'],

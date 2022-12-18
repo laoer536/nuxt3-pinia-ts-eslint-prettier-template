@@ -19,12 +19,15 @@ export async function fetchGet<ResT, ReqT extends SearchParameters = SearchParam
   return { pending, refresh, error, execute, data: resData }
 }
 
-export function fetchGetAll<ResT, ReqT extends SearchParameters = SearchParameters>(
+export async function fetchGetAll<ResT, ReqT extends SearchParameters = SearchParameters>(
   url: string,
   data?: ReqT,
   other?: Omit<FetchOptions, 'query'>
 ) {
-  return useFetch<BaseRes<ResT>>(url, { method: 'GET', query: data, ...other })
+  const useFetchRes = await useFetch<BaseRes<ResT>>(url, { method: 'GET', query: data, ...other })
+  const allData = useFetchRes.data as Ref<BaseRes<ResT>>
+  const { pending, refresh, error, execute } = useFetchRes
+  return { pending, refresh, error, execute, data: allData }
 }
 
 export async function fetchPost<ResT, ReqT extends SearchParameters = SearchParameters>(
@@ -39,10 +42,13 @@ export async function fetchPost<ResT, ReqT extends SearchParameters = SearchPara
   return { pending, refresh, error, execute, data: resData }
 }
 
-export function fetchPostAll<ResT, ReqT extends SearchParameters = SearchParameters>(
+export async function fetchPostAll<ResT, ReqT extends SearchParameters = SearchParameters>(
   url: string,
   data?: ReqT,
   other?: Omit<FetchOptions, 'body'>
 ) {
-  return useFetch<BaseRes<ResT>>(url, { method: 'POST', body: data, ...other })
+  const useFetchRes = await useFetch<BaseRes<ResT>>(url, { method: 'POST', body: data, ...other })
+  const allData = useFetchRes.data as Ref<BaseRes<ResT>>
+  const { pending, refresh, error, execute } = useFetchRes
+  return { pending, refresh, error, execute, data: allData }
 }

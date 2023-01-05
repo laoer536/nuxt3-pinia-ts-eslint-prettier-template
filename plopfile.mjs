@@ -5,7 +5,7 @@ export default function (plop) {
     const { fileType, fileMode, fileName } = answers
     try {
       execSync(`npx nuxi add ${fileType} ${fileName} ${fileMode === 'no-mode' ? '' : '--' + fileMode}`)
-      return `${process.cwd()}/${fileType}`
+      return `成功添加文件到${process.cwd()}/${fileType}目录下`
     } catch (err) {
       throw err
     }

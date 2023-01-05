@@ -8,7 +8,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint . --ext .vue,.js,.ts --fix",
-    "format": "prettier --write \"./**/*.{html,vue,ts,js,json,md}\""
+    "format": "prettier --write \"./**/*.{html,vue,ts,js,json,md}\"",
+    "addFile": "plop add"
   },
   "devDependencies": {
     "@nuxt/content": "^2.2.2",
@@ -23,6 +24,7 @@
     "eslint-plugin-security-node": "^1.1.1",
     "nprogress": "^0.2.0",
     "nuxt": "3.0.0",
+    "plop": "^3.1.1",
     "prettier": "^2.6.2",
     "prettier-plugin-tailwindcss": "^0.2.0",
     "sass": "^1.56.1",

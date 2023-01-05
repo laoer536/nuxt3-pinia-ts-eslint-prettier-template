@@ -22,6 +22,7 @@
     "eslint-plugin-anti-trojan-source": "^1.1.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-security-node": "^1.1.1",
+    "minimist": "^1.2.7",
     "nprogress": "^0.2.0",
     "nuxt": "3.0.0",
     "plop": "^3.1.1",

@@ -104,7 +104,7 @@ export default () => {
     //     'postcss-pxtorem': {
     //       rootValue({ file }: { file: string }) {
     //         return file.includes('vant') ? 50 : 100   // 为什是50而不是官方提供的37.5？ 达到目标rootValue=100并且屏幕宽度按750作为基准 方便开发书写那么
-    //   100vw/750*100=100vw/375*? ----->>> 推导出问号为50  所以这里vant的rootValue应该50 其他宽度也可以按照这种思路来  在给html设置(100vw/750*100)这个计算值作为font-size值就行了
+    //   100vw/750*100=100vw/375*?(vant以屏幕宽度为375进行适配的) ----->>> 推导出问号为50  所以这里vant的rootValue应该50 其他宽度也可以按照这种思路来  在给html设置(100vw/750*100)这个计算值作为font-size值就行了
     //  即13.3333333333vw  其他情况也如此  即实现rem自适应
     //       },
     //       propList: ['*'],

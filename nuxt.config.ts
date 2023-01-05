@@ -1,5 +1,4 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-// @ts-ignore
 import minimist from 'minimist'
 import { loadEnv } from 'vite'
 const argv = minimist(process.argv.slice(2))

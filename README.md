@@ -1,7 +1,5 @@
 ## nuxt3-pinia-ts-eslint-prettier-template
 
-------
-
 ## All features
 
 - 🤓 Fast create nuxt3 template.

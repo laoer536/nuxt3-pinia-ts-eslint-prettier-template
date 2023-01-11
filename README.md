@@ -2,6 +2,7 @@
 
 ## All features
 
+- 🫡 Based on nuxt3 stable version.
 - 🤓 Fast create nuxt3 template.
 - 🥰 This this a whole module nux3 template.
 - 😎 Add other, likes unocss, '@nuxt/content', 'nuxt-security'.

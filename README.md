@@ -3,7 +3,7 @@
 ## All features
 
 - 🤓 Fast create nuxt3 template.
-- 🥰 This this a whole module nux3 template.
+- 🥰 This is a whole module nux3 template.
 - 😎 Add other, likes unocss, '@nuxt/content', 'nuxt-security'.
 - 🍒 Fast start code with prettier and ESlint.
 - 🍺 The necessary configuration of the nuxt3 project is set.
